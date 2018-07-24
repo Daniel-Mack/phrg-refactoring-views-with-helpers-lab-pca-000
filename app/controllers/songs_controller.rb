@@ -25,6 +25,7 @@ class SongsController < ApplicationController
 
   def edit
     @song = Song.find(params[:id])
+    redirect_to @artist
   end
 
   def update
